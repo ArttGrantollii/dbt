@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: stg_covid_19
+    description: "Staging model for COVID data"
+    columns:
+      - name: country_region
+        tests:
+          - not_null
+      - name: confirmed
+        tests:
+          - not_null

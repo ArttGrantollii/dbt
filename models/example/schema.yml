@@ -1,5 +1,14 @@
-
 version: 2
+<<<<<<< HEAD
+
+models:
+  - name: my_second_dbt_model
+    description: "A starter dbt model"
+    columns:
+      - name: id
+        description: "The primary key for this table"
+        tests: []
+=======
     - name: my_second_dbt_model
       description: "A starter dbt model"
       columns:
@@ -7,3 +16,4 @@ version: 2
             description: "The primary key for this table"
             tests: []
                 
+>>>>>>> 8d19fb7b47b5cd5e5437747b3e32d187df99054b
