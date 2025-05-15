@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: stg_country_stats
+    description: "Staging model for raw country COVID stats"
+    columns:
+      - name: country_region
+        tests:
+          - not_null
+      - name: Confirmed
+        tests:
+          - not_null
+      - name: Deaths
+        tests:
+          - not_null
