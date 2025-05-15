@@ -1,3 +1,5 @@
+{{ config(materialized='view') }}
+
 SELECT
   `Country_Region` AS country_region,
   Confirmed,

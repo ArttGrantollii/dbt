@@ -1,0 +1,19 @@
+version: 2
+
+models:
+  - name: covid_stats_enriched
+    description: "COVID stats with calculated KPIs and regional rank"
+    columns:
+      - name: country_region
+        description: "Country name"
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_country_stats')
+              field: country_region
+      - name: case_fatality_rate
+        description: "Deaths / Confirmed (%)"
+        tests:
+          - not_null
+      - name: recovery_rate
+        description: "Recovered / Confirmed (%)"
