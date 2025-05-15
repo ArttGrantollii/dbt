@@ -1,3 +1,5 @@
+{{ config(materialized='view') }}
+
 SELECT
   who_region,
   COUNT(DISTINCT country_region) AS country_count,
